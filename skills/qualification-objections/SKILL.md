@@ -1,6 +1,6 @@
 ---
 name: qualification-objections
-description: "Квалификация и дисквалификация B2B-лида и отработка возражений на звонке и в переписке. Используй, когда нужно понять, ваш ли это клиент (ICP, реферал партнёру или отказ), что спросить у лида на первом контакте (discovery) и как ответить на возражение — про цену, сроки, риски, «у нас уже есть поставщик» или на просьбу о том, что вы не делаете. Триггеры: «наш ли это лид», «квалифицируй клиента», «что спросить у лида», «как ответить на возражение», «клиент говорит дорого»."
+description: "Lead qualification and objection handling for B2B sales, on calls and in writing. Sorts a lead into three buckets (ICP / referral to a partner / decline), gives discovery questions for the first contact, and principles for answering objections about price, timing, reliability, 'we already have a vendor' or requests for things you don't do. Skill body is in Russian. Triggers (EN): 'is this our lead?', 'qualify this client', 'what to ask the lead', 'how to answer this objection', 'the client says it is too expensive'. Triggers (RU): «наш ли это лид», «квалифицируй клиента», «что спросить у лида», «как ответить на возражение», «клиент говорит дорого»."
 ---
 
 # Квалификация лида и отработка возражений

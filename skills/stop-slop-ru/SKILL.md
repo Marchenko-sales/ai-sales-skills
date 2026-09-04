@@ -1,6 +1,6 @@
 ---
 name: stop-slop-ru
-description: "Убирает узнаваемые ИИ-штампы из текста на русском языке: подводки, ложные контрасты, канцелярит, мёртвые фразы холодного аутрича. Использовать при написании, редактировании и финальной проверке любых текстов — писем, сообщений, постов — перед отправкой. Для холодных писем и сообщений действует жёсткий режим. Триггеры: «убери ИИ-штампы», «почисти текст», «звучит как нейросеть», «проверь перед отправкой»."
+description: "Removes recognizable AI-writing patterns from Russian-language text: throat-clearing openers, false contrasts, bureaucratese, dead cold-email closers. Use when writing, editing or final-checking any Russian text — emails, messages, posts — before sending. Hard mode for cold outreach. Russian adaptation of the MIT-licensed stop-slop by Hardik Pandya. Skill body is in Russian. Triggers (EN): 'remove AI clichés', 'clean up this Russian text', 'does this sound like a bot?'. Triggers (RU): «убери ИИ-штампы», «почисти текст», «звучит как нейросеть», «проверь перед отправкой»."
 ---
 
 # Stop Slop RU

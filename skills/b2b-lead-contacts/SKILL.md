@@ -1,6 +1,6 @@
 ---
 name: b2b-lead-contacts
-description: "Глубокий поиск именных контактов и ЛПР у конкретной компании: ФИО и роли людей, принимающих решение о покупке вашего продукта, их LinkedIn, личный Telegram, паттерн корпоративной почты и вероятные персональные адреса. Это дорогой по времени и токенам этап — запускай его ТОЛЬКО когда именные контакты реально нужны (общего канала info@/partners@ недостаточно) либо когда пользователь прямо просит: «найди ЛПР», «кто основатель», «выйди на CEO», «найди личный email/телеграм». Контекст компании (юрлицо, репутация, сигналы покупки, публичные каналы) собирает скилл company-context — если он ещё не запускался, начни с него; этот скилл дополняет его именными персонами."
+description: "Deep search for named decision-makers at a specific company: names and roles of the people who decide on buying your product, their LinkedIn and personal Telegram, the corporate email pattern and probable personal addresses with confidence levels. An expensive step — run ONLY when a generic channel (info@/partners@) is not enough or the user asks directly. Company context (legal entity, reputation, buying signals) comes from company-context — run it first. Skill body is in Russian. Triggers (EN): 'find the decision-maker', 'who is the founder', 'reach the CEO', 'find a personal email or Telegram'. Triggers (RU): «найди ЛПР», «кто основатель», «выйди на CEO», «найди личный email/телеграм»."
 ---
 
 # Глубокий поиск именных контактов (ЛПР)

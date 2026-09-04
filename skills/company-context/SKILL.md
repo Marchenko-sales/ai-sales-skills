@@ -1,6 +1,6 @@
 ---
 name: company-context
-description: "Быстрый сбор контекста о конкретной компании перед первым касанием в B2B-продажах — чтобы написать сильное первое сообщение, а не «мы предлагаем сотрудничество». Собирает: юрлицо и юрисдикцию, репутацию, публичные каналы связи (info@, partners@, Telegram, формы), текущего поставщика в вашей категории и сигналы покупки с зацепкой под оффер. НЕ ищет именных ЛПР и персональные email — это отдельная, более дорогая задача. Используй при формулировках: «собери контекст по компании», «что за компания», «наш ли это клиент», «с каким поводом заходить», «чем они пользуются сейчас»."
+description: "Pre-outreach company dossier for B2B sales — so the first message is specific instead of 'we'd like to offer cooperation'. Collects: legal entity and jurisdiction, reputation, public contact channels (info@, partners@, Telegram, forms), the current vendor in your category, and buying signals with a hook for your offer. Does NOT search for named decision-makers or personal emails — that is a separate, more expensive step. Skill body is in Russian. Triggers (EN): 'build a dossier on company X', 'is this our lead?', 'what do they use now?', 'what angle to approach with'. Triggers (RU): «собери контекст по компании», «что за компания», «наш ли это клиент», «с каким поводом заходить», «чем они пользуются сейчас»."
 ---
 
 # Контекст компании перед первым касанием

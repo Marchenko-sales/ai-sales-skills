@@ -1,72 +1,72 @@
 # AI Sales Skills
 
-**Открытая библиотека AI-скиллов для B2B-продаж на русском языке.** Полный цикл: поиск компаний → досье перед касанием → контакты ЛПР → холодное письмо → квалификация → возражения → чистка текста от ИИ-штампов.
+**An open library of Agent Skills for B2B sales.** Full cycle: segment prospecting → pre-outreach company dossier → decision-makers → cold outreach with follow-up cadence → qualification and objections → scrubbing AI clichés out of copy.
 
-Каждый скилл обкатан в реальных сделках. У каждого — инструкция, настройка под ваш продукт и пример «вход → выход».
+Every skill is battle-tested on real deals. Each one ships with instructions, a setup block for your product, and a worked input → output example.
 
-*[English summary below](#english)*
+> **Language note.** Skill bodies are written in Russian — they were built for a Russian-speaking sales team and the cold-email conventions of that market. Claude reads them natively: you can send requests in English and get results in whatever language you sell in. English skill bodies are on the roadmap; star the repo to vote for them. *[Краткое описание по-русски — внизу.](#по-русски)*
 
-## Чем это отличается от «сборников промтов»
+## Why this isn't "another prompt list"
 
-- **Ставятся как плагин.** Формат [Agent Skills](https://github.com/anthropics/skills) (Anthropic): папка + `SKILL.md`. Скилл срабатывает сам, когда задача подходит, — копировать промты в чат не нужно.
-- **Полный цикл продаж.** Скиллы передают результат друг другу: досье компании становится входом для письма, письмо — для квалификации ответа.
-- **Пример у каждого скилла.** В каждой папке — `ПРИМЕР.md`: сквозной вымышленный кейс (один и тот же продавец и лид проходят через всю библиотеку) с реальной структурой и глубиной рабочего вывода. Данные придуманы — так честнее, чем «обезличенные»: наружу не выносится ничего из реальных сделок.
-- **Без платных сервисов в ядре.** Всё работает на Claude и открытом интернете. Единственный опциональный платный шаг — email-верификатор перед отправкой на сгенерированные адреса, и он не обязателен.
+- **Installs as a plugin.** [Agent Skills](https://github.com/anthropics/skills) format (Anthropic): a folder plus `SKILL.md`. The skill triggers itself when the task fits — no copy-pasting prompts into chat.
+- **Full sales cycle.** Skills hand results to each other: the company dossier becomes the input for the outreach email, the email becomes the input for qualifying the reply.
+- **A worked example in every skill.** Each folder has `ПРИМЕР.md` (example): one end-to-end fictional case — the same vendor and the same lead move through the whole library — with the structure and depth of a real working output. The data is invented on purpose: nothing from real deals leaves the building.
+- **No paid services at the core.** Everything runs on Claude and the open web. The only optional paid step is an email verifier before sending to pattern-generated addresses, and you can skip it.
 
-## Скиллы
+## Skills
 
-| Скилл | Что делает | Статус |
+| Skill | What it does | Status |
 |---|---|---|
-| [company-context](skills/company-context/) | Досье компании перед первым касанием: юрлицо, репутация, каналы связи, текущий поставщик, сигналы покупки | ✅ |
-| [segment-company-search](skills/segment-company-search/) | Поиск компаний-кандидатов по сегменту/нише, результат в таблице с приоритизацией | ✅ |
-| [b2b-lead-contacts](skills/b2b-lead-contacts/) | Поиск ЛПР: имена и роли, LinkedIn и Telegram, паттерн корпоративной почты | ✅ |
-| [cold-outreach](skills/cold-outreach/) | Первое письмо/сообщение + каденция follow-up из 4 касаний | ✅ |
-| [qualification-objections](skills/qualification-objections/) | Квалификация лида и работа с возражениями на ответном контакте | ✅ |
-| [stop-slop-ru](skills/stop-slop-ru/) | Убирает ИИ-штампы из русского текста перед отправкой; жёсткий режим для холодного аутрича | ✅ |
-| company-profile | Собирает файл контекста о вашей компании: сам вычитывает сайт и материалы, недостающее добирает коротким интервью (подключённые сервисы использует, если они есть) | ⭐ выйдет на 50 звёздах |
-| segment-research | Полное маркетинговое исследование рынка мультиагентным процессом: карта сегментов → досье → конкуренты → messaging-map → пособие продаж → тест офферов → аудит. Процесс, которым сделано реальное исследование 18 сегментов | ⭐⭐ выйдет на 100 звёздах |
+| [company-context](skills/company-context/) | Pre-outreach company dossier: legal entity, reputation, contact channels, current vendor in your category, buying signals with dates and links | ✅ |
+| [segment-company-search](skills/segment-company-search/) | Finds candidate companies in a niche, verifies each against strict ICP criteria, saves a prioritized table | ✅ |
+| [b2b-lead-contacts](skills/b2b-lead-contacts/) | Finds named decision-makers: roles, LinkedIn and Telegram, corporate email pattern with confidence levels | ✅ |
+| [cold-outreach](skills/cold-outreach/) | First email / message plus a 4-touch follow-up cadence; CTA rules instead of dead closers; anti-template rules across contacts at one company | ✅ |
+| [qualification-objections](skills/qualification-objections/) | Lead qualification (ICP / referral / decline), discovery questions, principles for handling price, timing, risk and incumbent-vendor objections | ✅ |
+| [stop-slop-ru](skills/stop-slop-ru/) | Removes recognizable AI-writing patterns from Russian text; hard mode for cold outreach. Russian adaptation of [stop-slop](https://github.com/hardikpandya/stop-slop) | ✅ |
+| company-profile | Builds your company context file: reads your website and materials on its own, fills the gaps with a short interview (uses connected services when available) | ⭐ unlocks at 50 stars |
+| segment-research | Full market research as a multi-agent process: segment map → dossier per segment → competitors → messaging map → sales playbook → offer testing → audit. The process behind a real 18-segment study | ⭐⭐ unlocks at 100 stars |
 
-## Установка
+## Install
 
-**Claude Code** (личные скиллы — доступны во всех проектах):
+**Claude Code** (personal skills, available in every project):
 
 ```bash
 git clone https://github.com/Marchenko-sales/ai-sales-skills.git
 cp -r ai-sales-skills/skills/* ~/.claude/skills/
 ```
 
-Либо только в один проект: скопируйте нужные папки в `.claude/skills/` внутри проекта.
+For a single project only: copy the folders you need into `.claude/skills/` inside the project.
 
-**Claude (веб/приложение):** содержимое `SKILL.md` можно использовать как инструкцию проекта или приложить к запросу — скиллы написаны так, что работают и без установки.
+**Claude (web / desktop app):** paste the contents of a `SKILL.md` as project instructions or attach it to a request — the skills are written to work without installation too.
 
-## Перед стартом: соберите файл контекста о своей компании
+## Before you start: build a company profile file
 
-Каждый скилл начинает с вопросов о вашем продукте, ICP и ограничениях. Чтобы не отвечать на них в каждой сессии заново, соберите один MD-файл с контекстом компании — продукт и оффер, ICP-признаки, категория конкурентов, стоп-ниши, тон общения — и держите его в проекте: скиллы будут читать его сами.
+Every skill opens by asking about your product, ICP and constraints. To answer once instead of every session, keep one Markdown file with your company context in the project — product and offer, ICP signals, competitor category, stop-niches, tone of voice — and the skills will read it themselves.
 
-Такой файл можно написать руками за полчаса. А можно не писать: я готовлю отдельный скилл **company-profile**, который соберёт его за вас — сам вычитает ваш сайт и материалы, а недостающее доберёт коротким интервью. Нужен такой скилл — **поставьте репозиторию звезду**: на 50 звёздах выкладываю его сюда.
+You can write that file by hand in half an hour. Or not: I'm preparing a separate skill, **company-profile**, that builds it for you — reads your website and materials on its own, then fills the gaps with a short interview. Want it? **Star the repo**: at 50 stars it ships here.
 
-## Как пользоваться
+## How to use
 
-Скиллы срабатывают сами по формулировке задачи: «собери контекст по компании X», «наш ли это клиент». Первое, что сделает скилл, — спросит про ваш продукт и ICP, если ещё не знает: настройка описана внутри каждого скилла.
+Skills trigger on the task itself: "build a dossier on company X", "is this our lead?". The first thing a skill does is ask about your product and ICP if it doesn't know yet — the setup block lives inside each skill.
 
-Рабочая цепочка на примере: `segment-company-search` находит 30 компаний ниши → `company-context` собирает досье по приоритетным → `cold-outreach` пишет первое письмо от досье → ответ лида разбирает `qualification-objections` → перед отправкой любой текст проходит `stop-slop-ru`. Скиллы выходят по одному (статусы — в таблице выше); каждый работает и сам по себе, цепочка складывается по мере релизов.
+A working chain: `segment-company-search` finds 30 companies in a niche → `company-context` builds dossiers on the priority ones → `cold-outreach` writes the first email from the dossier → the lead's reply is handled by `qualification-objections` → every outgoing text passes through `stop-slop-ru` before sending. Each skill also works on its own.
 
-## Автор
+## Author
 
-Даниил Марченко — CBDO в финтехе, строю продажи и развитие бизнеса на связке «человек + AI-агенты» и выкладываю сюда то, что пережило контакт с реальными лидами.
+Daniil Marchenko — CBDO at a fintech company. I build sales and business development on a "human + AI agents" pipeline and publish here what survived contact with real leads.
 
 Telegram: [@stereonetip](https://t.me/stereonetip) · LinkedIn: [daniil-marchenko-sales](https://www.linkedin.com/in/daniil-marchenko-sales/)
 
-Хотите внедрить эти процессы у себя — от настройки скиллов под ваш продукт до полного сегментного исследования рынка под ключ — напишите мне в [Telegram](https://t.me/stereonetip).
+Want these processes implemented in your team — from tuning the skills to your product up to a full market segmentation study — message me on [Telegram](https://t.me/stereonetip).
 
-Вопросы и предложения — в [Issues](../../issues). Если библиотека полезна — поставьте звезду, это помогает её находить.
+Questions and suggestions — [Issues](../../issues). If the library is useful, a star helps others find it.
 
-## Лицензия
+## License
 
-[CC BY 4.0](LICENSE) — используйте свободно, в том числе коммерчески, с указанием авторства.
+[CC BY 4.0](LICENSE) — use freely, including commercially, with attribution.
 
 ---
 
-## English
+## По-русски
 
-**An open library of AI skills for B2B sales, Russian-first.** Covers the full sales cycle — prospecting, pre-outreach company research, finding decision-makers, cold outreach, qualification, objection handling, and de-sloppifying AI text. Built in the [Agent Skills](https://github.com/anthropics/skills) format (folder + `SKILL.md`), battle-tested on real deals, each skill ships with a worked input→output example (fictional data, real-world depth), no paid APIs required. English versions of the most popular skills are planned — star the repo to follow along.
+**Открытая библиотека AI-скиллов для B2B-продаж на русском языке.** Полный цикл: поиск компаний по сегменту → досье перед первым касанием → контакты ЛПР → холодное письмо с цепочкой follow-up → квалификация и возражения → чистка текста от ИИ-штампов. Каждый скилл обкатан в реальных сделках, у каждого — инструкция, настройка под ваш продукт и пример «вход → выход». Сами скиллы написаны по-русски; установка и описание — выше. Внедрение под ключ — в [Telegram](https://t.me/stereonetip).

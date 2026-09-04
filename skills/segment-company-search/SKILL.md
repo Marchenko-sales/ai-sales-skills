@@ -1,6 +1,6 @@
 ---
 name: segment-company-search
-description: "Поиск компаний-кандидатов в клиенты по заданному сегменту или гипотезе (например «медицинский туризм», «онлайн-школы английского», «сервисы аренды авто»). Используй, когда пользователь просит найти компании по нише/сегменту/гипотезе, составить список кандидатов для аутрича по отрасли: «накидай компаний в сфере X», «найди 30 компаний ниши Y», «список площадок в сегменте Z» — в любых формулировках, где на входе НЕ конкретная компания, а описание сегмента. Скилл ищет сами компании, проверяет каждую по жёстким критериям ICP и сохраняет результат в xlsx с приоритизацией. Результат — вход для скилла company-context (досье по конкретной компании)."
+description: "Segment prospecting for B2B sales: finds candidate companies in a given niche or hypothesis (e.g. 'medical tourism', 'online English schools', 'car rental services'), verifies each against two strict criteria (segment fit + your ICP signal) and saves a prioritized xlsx (priority signal × company scale). Use when the input is a segment description, NOT a specific company. Output feeds company-context. Skill body is in Russian. Triggers (EN): 'find 30 companies in niche X', 'list candidates in segment Y'. Triggers (RU): «накидай компаний в сфере X», «найди 30 компаний ниши Y», «список площадок в сегменте Z»."
 ---
 
 # Поиск компаний по сегменту/гипотезе

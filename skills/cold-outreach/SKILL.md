@@ -1,6 +1,6 @@
 ---
 name: cold-outreach
-description: "Написание первых сообщений для B2B-аутрича: персонализированные холодные письма (email), сообщения в Telegram, LinkedIn (принятым контактам) и письма в общие ящики (info@) — для всех контактов компании из досье, плюс цепочка follow-up. Используй, когда пользователь просит написать письмо или сообщение компании/контакту/ЛПР, подготовить аутрич, первое касание, холодное письмо, follow-up — в любых формулировках: «напиши письмо», «подготовь сообщение для», «напиши в телеграм фаундеру», в том числе сразу после того, как company-context собрал досье или b2b-lead-contacts нашёл контакты. Для письма в общий канал достаточно досье company-context."
+description: "Cold outreach for B2B: personalized first messages — email, Telegram, LinkedIn (accepted connections) and generic inboxes (info@) — for every contact from the dossier, plus a 4-touch follow-up cadence. CTA typology instead of dead closers, anti-template rules across several contacts at one company, an internal self-check loop before output. Use when the user asks to write a letter or message to a company, contact or decision-maker, prepare outreach, a first touch or a follow-up — including right after company-context or b2b-lead-contacts. Skill body is in Russian. Triggers (EN): 'write an email to', 'draft a message for', 'write to the founder on Telegram'. Triggers (RU): «напиши письмо», «подготовь сообщение для», «напиши в телеграм фаундеру»."
 ---
 
 # Первое сообщение для холодного аутрича
